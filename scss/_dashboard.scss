@@ -1,0 +1,342 @@
+// Start of dashboard page
+@import "variables_mixins.scss";
+
+#dashboard {
+	padding: 0px 0px 30px;
+	background-image: url('../images/dashboard.jpg');
+	background-color: rgba(0, 0, 0, 0.3);
+	background-blend-mode: multiply;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.nav-pills {
+		.nav-link {
+			color: white;
+			font-family:'Poppins', sans-serif;
+			font-size: 1.35em;
+			padding-bottom: 0;
+			margin: 0 30px;
+			border-radius: 0;
+			background-color: transparent;
+			&:hover {
+				border-bottom: 3px solid white;
+				transition: border-bottom 300ms ease-out;
+			}
+		}
+		.s-btn-icon {
+			display: none;
+			svg {
+				height: 20px;
+				width: 20px;
+			}
+		}
+		.active {
+			border-bottom: 3px solid white;
+		}
+	}
+	.tab-content {
+		color: white;
+		#pills-ppl {
+			div {
+				margin: 20px 0;
+				#srch-ppl {
+					border: 1px solid $primary;
+					border-radius: 4px;
+					font-size: 16px;
+					font-family: 'Open Sans', sans-serif;
+					background-color: white;
+					background-image: url('../images/searchicon.png');
+					background-size: 23px;
+					background-position: 10px 50%; 
+					background-repeat: no-repeat;
+					padding: 12px 20px 12px 40px;
+					-webkit-transition: width 0.4s ease-in-out;
+					transition: width 0.4s ease-in-out;
+				}
+			}
+			ul {
+				li {
+					padding: 15px;
+					margin-bottom: 2px;
+					cursor: pointer;
+					img {
+						width: 25px;
+						height: 25px;
+					}
+					span {
+						margin-left: 10px;
+						font-family: 'Open Sans', sans-serif;
+					}
+				}
+			}
+		}
+		#pills-add-med {
+			.container {
+				background-color: rgba(255, 255, 255, 0.95);
+				min-height: 600px;
+				margin: 20px 0;
+				padding: 30px;
+				.med-section {
+					margin-bottom: 50px;
+					h2 {
+						color: $primary;
+						font-family: 'Arvo', serif;
+						margin-bottom: 15px;
+						font-size: 1.8em;
+					}
+					.med-box {
+						width: 100%;
+						height: 300px;
+						position: relative;
+						border: 2px solid $primary;
+					}
+					.add-med-1 {
+						padding: 10px;
+						height: 450px;
+						#add-med-artcl {
+							form {
+								.form-floating {
+									margin-top: 10px;
+									label {
+										color: $primary;
+									}
+									textarea {
+										min-height: 200px;
+										overflow-y: auto;
+									}
+								}
+								.mb-3 {
+									margin-top: 50px;
+									display: flex;
+									justify-content: center;
+									button {
+										margin: 0 10px;
+									}
+								}
+							}
+						}
+					}
+					.add-med-2 {
+						padding: 10px;
+						height: 510px;
+						#add-med-book {
+							form {
+								.form-floating {
+									margin-top: 10px;
+									label {
+										color: $primary;
+									}
+									textarea {
+										min-height: 100px;
+										overflow-y: auto;
+									}
+								}
+								.buttons {
+									margin-top: 10px;
+									display: flex;
+									justify-content: center;
+									button {
+										margin: 0 10px;
+									}
+								}
+								.file {
+									margin-top: 20px;
+									label {
+										color: $primary;
+									}
+								}
+							}
+						}
+					}
+					.add-med-3 {
+						padding: 10px;
+						height: 300px;
+						#add-med-img {
+							form {
+								.form-floating {
+									margin-top: 10px;
+									label {
+										color: $primary;
+									}
+									textarea {
+										min-height: 100px;
+										overflow-y: auto;
+									}
+								}
+								.buttons {
+									margin-top: 10px;
+									display: flex;
+									justify-content: center;
+									button {
+										margin: 0 10px;
+									}
+								}
+								.file {
+									margin-top: 20px;
+									label {
+										color: $primary;
+									}
+								}
+							}
+						}
+					}
+					.recent-med {
+						border: 2px dashed $primary;
+						.rec-text {
+							color: $primary;
+							font-family: 'Poppins', sans-serif;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							font-size: 1.25em;
+						}
+					}
+					.add-more-med {
+						margin-top: 10px;
+						width: 100%;
+						position: relative;
+						button {
+							position: absolute;
+							right: 0;
+							border: none;
+							background-color: transparent;
+							&:hover {
+								color: rgba($primary, 0.9);
+								transition: color 300ms ease-in;
+							}
+							span {
+								margin-left: 10px;
+								font-size: 1.05em;
+								vertical-align: middle;
+							}
+							svg {
+								height: 14px;
+								width: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#pills-settings {
+			.container {
+				background-color: rgba(255, 255, 255, 0.95);
+				min-height: 600px;
+				margin: 20px 0;
+				padding: 30px;
+				h2 {
+					color: $primary;
+					margin-bottom: 30px;
+				}
+				.row {
+					margin-bottom: 30px;
+					.col-md-5 {
+						.img-box {
+							color: transparent;
+							transition: all .3s ease;
+							display: flex;
+							justify-content: center;
+							position: relative;
+							transition: all .3s ease;
+							input {
+								display: none;
+							}
+							img {
+								position: absolute;
+							    object-fit: cover;
+							    width: 250px;
+							    height: 250px;
+							    border-radius: 50%;
+							    z-index: 0;
+							}
+							label {
+								cursor: pointer;	
+								width: 250px;
+							    height: 250px;
+							    span, svg {
+								    display: inline-flex;
+								    padding: .2em;
+								}
+								svg {
+									width: 26px; 
+									height: 26px;
+								}
+								span {
+									height: 2em;
+								}
+							}
+							&:hover {
+							    label {
+							    	display: flex;
+							    	justify-content: center;
+							    	align-items: center;
+							    	background-color: rgba(0,0,0,.8);
+							    	z-index: 100;
+							    	color: white;
+							    	transition: background-color .2s ease-in-out;
+							    	border-radius: 50%;
+							    	margin-bottom: 0;
+							    }
+							}
+						}
+					}
+					.col-md-7 {
+						form {
+							div {
+								label {
+									color: $primary;
+								}
+							}
+							.buttons {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								button {
+									margin-left: 10px;
+									margin-right: 10px;
+									svg {
+										margin-right: 2px;
+									}
+									span {
+										vertical-align: middle;
+									}
+								}
+							}
+							.s-div-pwd {
+								position: relative;
+								.pwd-visibility {
+									position: absolute;
+									color: $primary;
+									right: 25px;
+									bottom: 8px;
+									svg {
+										height: 20px;
+										width: 20px;
+										cursor: pointer;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.hide {
+		display: none;
+	}
+	.small-text {
+		width: 100%;
+		position: relative;
+		margin-top: 10px;
+		span {
+			color: $primary;
+			position: absolute;
+			right: 10px;
+			font-family: 'Poppins', sans-serif;
+		}
+	}
+}
+
+// End of Dashboard Page

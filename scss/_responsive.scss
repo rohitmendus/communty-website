@@ -1,0 +1,868 @@
+@import "variables_mixins.scss";
+
+// Large devices 
+@media (max-width: 1200px) {
+
+}
+// Medium devices
+@media (max-width: 992px) {
+	.navbar-dark {
+		.navbar-collapse {
+			.navbar-nav {
+				margin-right: 10px;
+				.nav-item {
+					font-size: 1.2em;
+				}
+			}
+		}
+		.navbar-brand {
+			margin-left: 25px;
+			span {
+				font-size: 1.3em;
+			}
+			.logo-img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+	.jumbotron-main {
+		.container {
+			#family-icon {
+				width: 200px;
+				height: 200px;
+			}
+			h1 {
+				font-size: 3.5em;
+			}
+		}
+	}
+	#about_us {
+		.content {
+			padding: 35px 0;
+			h1 {
+				font-size: 2.25em;
+			}
+			p {
+				font-size: 1.15em;
+			}
+			#about-images {
+				img {
+					width: 300px;
+					height: 225px;
+				}
+				#img2 {
+					margin-top: 100px;
+					margin-left: 50px;
+				}
+			}
+		}
+	}
+	#articles {
+		.card {
+			.card-body {
+				.item {
+					.image {
+						svg {
+							height: 65px;
+							width: 66px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#books {
+		h1 {
+			font-size: 2.5em;
+		}
+	}
+	#gallery {
+		h1 {
+			font-size: 2.25em;
+		}
+		#image-viewer {
+			img {
+				max-width: 500px;
+			}
+			span {
+				font-size: 2em;
+				bottom: 10%;
+			}
+			p {
+				font-size: 1.25em;
+			}
+			.next-icon, .prev-icon {
+				svg {
+					width: 70px;
+					height: 70px;
+				}
+			}
+		}
+	}
+	#footer {
+		.container {
+			.row {
+				.col-md-4 {
+					h3{
+						font-size: 1.5em;
+					}
+				}
+				.site-links {
+					text-align: center;
+				}
+				.message {
+					form {
+						.form-floating {
+							font-size: 0.9em;
+							textarea {
+								min-height: 70px;
+								font-size: 0.9em;
+							}
+							input {
+								font-size: 0.9em;
+							}
+							button {
+								width: auto;
+								font-size: 0.9em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#dashboard {
+		.tab-content {
+			#pills-add-med {
+				.container {
+					.med-section {
+						h2 {
+							font-size: 1.6em;
+						}
+						.med-box {
+							.med-form {
+								form {
+									div {
+										button {
+											font-size: 0.95em;
+										}
+										.invalid-feedback, .valid-feedback {
+											font-size: 0.8em;
+										}
+									}
+								}
+							}
+						}
+						.recent-med {
+							.rec-text {
+								font-size: 1.05em;
+							}
+						}
+						.add-more-med {
+							button {
+								svg {
+									height: 13px;
+									width: 13px;
+								}
+								span {
+									font-size: 1em;
+								}
+							}
+						}
+					}
+				}
+			}
+			#pills-settings {
+				.container {
+					h2 {
+						font-size: 1.8em;
+					}
+					.row {
+						.col-md-5 {
+							.img-box {
+								height: 250px;
+								width: 200px;
+								margin-left: 20px;
+								img{
+									width: 100%;
+									height: 200px;
+								}
+								label {
+									height: 2em;
+									color: $primary;
+									position: absolute;
+									bottom: 0;
+									z-index: 100;
+									left: 15%;
+									span {
+										font-size: 0.95em;
+									}
+									svg {
+										width: 24px;
+										height: 24px;
+									}
+								}
+								&:hover {
+									label {
+										border-radius: 0;
+										background: unset;
+										display: inline-block;
+										color: $primary;
+									}
+								}
+							}
+						}
+						.col-md-7 {
+							form {
+								div {
+									.invalid-feedback, .valid-feedback {
+										font-size: 0.8em;
+									}
+								}
+								.buttons {
+									button {
+										font-size: 0.95em;
+									}
+								}
+								.s-div-pwd {
+									.pwd-visibility {
+										svg {
+											height: 18px;
+											width: 18px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.small-text {
+			span {
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+
+
+// Tablet devices
+@media (max-width: 767px) {
+	.navbar-brand {
+		margin-left: 10px;
+		span {
+			font-size: 1.15em;
+		}
+		.logo-img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.navbar-collapse {
+		margin-top: 10px;
+		margin-left: 25px;
+		.navbar-nav {
+			margin: 0;
+			display: block;
+		}
+	}
+	#sign-in-page {
+		.back {
+			font-size: 0.8em;
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		#sign-in-or-register {
+			.card {
+				width: 380px;
+				height: 450px;
+				overflow-y: auto;
+				.card-body {
+					margin: 0 auto;
+					width: 320px;
+					font-size: 0.8em;
+					.nav {
+						.nav-item {
+							font-size: 18px;
+						}
+					}
+					.tab-content {
+						#g-signin {
+							* {
+								font-size: 0.9em;
+							}
+							#my-signin2 {
+								.abcRioButton {
+									width: 270px !important;
+								}
+							}
+						}
+						.sign-in-body {
+							button[type="submit"] {
+								width: 270px;
+							}
+							.name-sign-in {
+								display: block;
+								input[type="text"] {
+									max-width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.jumbotron-main {
+		.container {
+			h1 {
+				font-size: 3em;
+			}
+		}
+	}
+	#about_us {
+		.content {
+			padding: 50px 10px;
+			h1 {
+				text-align: center;
+				font-size: 2.1em;
+				padding-bottom: 10px;
+			}
+			p {
+				padding: 0;
+				font-size: 1.05em;
+			}
+			#about-images {
+				width: (260px*2) - 100px;
+				height: (195px*2) - 70px;
+				position: relative;
+				img {
+					width: 260px;
+					height: 195px;
+				}
+				#img1 {
+					left: 10%;
+				}	
+				#img2 {
+					margin-top: 70px;
+					margin-left: 100px;
+				}
+			}
+		}
+	}
+	#articles {
+		.card {
+			.card-body {
+				.item {
+					.image {
+						svg {
+							height: 60px;
+							width: 60px;
+						}
+					}
+					.text {
+						a {
+							h3 {
+								font-size: 1.25em;
+							}
+						}
+						small {
+							font-size: 0.8em;
+						}
+					}
+				}
+			}
+		}
+	}
+	#books {
+		h1 {
+			font-size: 2.5em;
+		}
+		.carousel {
+			.carousel-inner {
+				.carousel-item {
+					.card {
+						height: 450px;
+						font-size: 0.95em;
+						.card-img-top {
+							width: 170px;
+							height: 250px;
+							margin: 0 auto;
+						}
+						.card-body {
+							.rating {
+								.number {
+									font-size: 0.7em;
+								}
+							}
+							.btn {
+								font-size: 0.95em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#gallery {
+		h1 {
+			font-size: 2em;
+		}
+		#image-viewer {
+			img {
+				max-width: 400px;
+			}
+			span {
+				font-size: 1.75em;
+				bottom: 20%;
+			}
+			p {
+				svg {
+					width: 16px;
+					height: 16px;
+				}
+			}
+			.next-icon, .prev-icon {
+				svg {
+					width: 65px;
+					height: 65px;
+				}
+			}
+			.next-icon {
+				right: 5%;
+			}
+			.prev-icon {
+				left: 5%;
+			}
+		}
+	}
+	#footer {
+		padding: 30px 25px;
+		.container {
+			.row {
+				.site-links {
+					text-align: justify;
+					ul {
+						padding-left: 20px;
+					}
+				}
+				.contact-us {
+					p {
+						padding-left: 20px;
+					}
+				}
+				.col-md-4 {
+					margin-bottom: 30px;
+					h3 {
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+	#dashboard {
+		.nav-pills {
+			.nav-link {
+				margin: 8px 5px;
+				padding: 0 9px;
+				font-size: 1.25em
+			}
+		}
+		.tab-content {
+			#pills-ppl {
+				* {
+					font-size: 0.95em;
+				}
+				div {
+					#srch-ppl {
+						font-size: 1em;
+						background-size: 20px;
+					}
+				}
+			}
+			#pills-add-med {
+				.container {
+					.med-section {
+						h2 {
+							font-size: 1.4em;
+						}
+						.med-box {
+							.med-form {
+								form {
+									div {
+										input, textarea {
+											font-size: 0.95em;
+										}
+										label {
+											font-size: 0.95em;
+										}
+										button {
+											font-size: 0.9em;
+										}
+										.invalid-feedback, .valid-feedback {
+											font-size: 0.75em;
+										}
+									}
+								}
+							}
+						}
+						.recent-med {
+							.rec-text {
+								font-size: 1em;
+								text-align: center;
+							}
+						}
+						.add-more-med {
+							button {
+								svg {
+									height: 12px;
+									width: 12px;
+								}
+								span {
+									font-size: 0.95em;
+								}
+							}
+						}
+					}
+				}
+			}
+			#pills-settings {
+				.container {
+					h2 {
+						font-size: 1.6em;
+						text-align: center;
+					}
+					.row {
+						.col-md-5 {
+							.img-box {
+								margin: 0 auto 30px;
+								display: flex;
+								label {
+									span {
+										font-size: 0.9em;
+									}
+									svg {
+										width: 22px;
+										height: 22px;
+									}
+								}
+							}
+						}
+						.col-md-7 {
+							form {
+								div {
+									input, textarea {
+										font-size: 0.95em;
+									}
+									label {
+										font-size: 0.95em;
+									}
+									.invalid-feedback, .valid-feedback {
+										font-size: 0.75em;
+									}
+								}
+								.buttons {
+									button {
+										font-size: 0.9em;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.small-text {
+			span {
+				font-size: 0.85em;
+			}
+		}
+	}
+}
+
+
+// For mobile users
+@media (max-width: 411px) {
+	#sign-in-page {
+		.back {
+			font-size: 0.8em;
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		#sign-in-or-register {
+			.card {
+				width: 310px;
+				height: 400px;
+				.card-body {
+					margin: 0 auto;
+					width: 270px;
+					font-size: 0.8em;
+					.tab-content {
+						#g-signin {
+							#my-signin2 {
+								.abcRioButton {
+									width: 220px !important;
+								}
+							}						
+						}
+						.sign-in-body {
+							button[type="submit"] {
+								width: 220px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.jumbotron-main {
+		height: 350px;
+		.container {
+			#family-icon {
+				width: 150px;
+				height: 150px;
+			}
+			h1 {
+				font-size: 2.5em;
+			}
+		}
+	}
+	#about_us {
+		.content {
+			padding: 30px 10px;
+			h1 {
+				text-align: center;
+				font-size: 8vw;
+			}
+			p {
+				padding: 20px 0;
+				font-size: 3.9vw;
+			}
+			#about-images {
+				width: (200px*2) - 70px;
+				height: (150px*2) - 70px;
+				position: relative;
+				img {
+					width: 200px;
+					height: 150px;
+				}
+				#img2 {
+					margin-top: 70px;
+					margin-left: 70px;
+				}
+			}
+		}
+	}
+	#articles {
+		.card {
+			.card-body {
+				.item {
+					.image {
+						svg {
+							height: 50px;
+							width: 50px;
+						}
+					}
+					.text {
+						a {
+							h3 {
+								font-size: 1em;
+							}
+						}
+						small {
+							font-size: 0.7em;
+						}
+					}
+				}
+				#read_more {
+					a {
+						font-size: 4vw;
+					}
+				}
+			}
+		}
+	}
+	#books {
+		h1 {
+			font-size: 10vw;
+		}
+		.carousel {
+			.carousel-inner {
+				.carousel-item {
+					.card {
+						height: 425px;
+						font-size: 0.9em;
+						.card-img-top {
+							width: 150px;
+							height: 225px;
+							margin: 0 auto;
+						}
+						.card-body {
+							.btn {
+								font-size: 0.9em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#gallery {
+		h1 {
+			font-size: 9vw;
+		}
+		#image-viewer {
+			img {
+				max-width: 320px;
+			}
+			span {
+				font-size: 1.5em;
+				bottom: 15%;
+			}
+			p {
+				font-size: 5vw;
+				svg {
+					width: 14px;
+					height: 14px;
+				}
+			}
+			.next-icon, .prev-icon {
+				svg {
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+	}
+	#dashboard {
+		.nav-pills {
+			.nav-link {
+				margin: 8px 7px;
+				padding: 0 5px;
+				font-size: 1.15em
+			}
+			.s-btn-icon {
+				display: block;
+			}
+			.s-btn-text {
+				display: none;
+			}
+		}
+		.tab-content {
+			#pills-ppl {
+				* {
+					font-size: 3.9vw;
+				}
+				div {
+					#srch-ppl {
+						font-size: 3.9vw;
+						background-size: 18px;
+					}
+				}
+			}
+			#pills-add-med {
+				.container {
+					.med-section {
+						h2 {
+							font-size: 1.2em;
+						}
+						.med-box {
+							.med-form {
+								form {
+									div {
+										input, textarea {
+											font-size: 0.9em;
+										}
+										label {
+											font-size: 0.9em;
+										}
+										button {
+											font-size: 0.85em;
+										}
+										.invalid-feedback, .valid-feedback {
+											font-size: 0.7em;
+										}
+									}
+								}
+							}
+						}
+						.recent-med {
+							.rec-text {
+								font-size: 0.9em;
+							}
+						}
+						.add-more-med {
+							button {
+								svg {
+									height: 11px;
+									width: 11px;
+								}
+								span {
+									font-size: 0.9em;
+								}
+							}
+						}
+					}
+				}
+			}
+			#pills-settings {
+				.container {
+					h2 {
+						font-size: 1.4em;
+					}
+					.row {
+						.col-md-5 {
+							.img-box {
+								height: 225px;
+								width: 175px;
+								img{
+									width: 100%;
+									height: 175px;
+								}
+							}
+						}
+						.col-md-7 {
+							form {
+								div {
+									input, textarea {
+										font-size: 0.9em;
+									}
+									label {
+										font-size: 0.9em;
+									}
+									.invalid-feedback, .valid-feedback {
+										font-size: 0.7em;
+									}
+								}
+								.buttons {
+									button {
+										font-size: 0.85em;
+									}
+								}
+								.s-div-pwd {
+									.pwd-visibility {
+										svg {
+											height: 16px;
+											width: 16px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.small-text {
+			span {
+				font-size: 0.8em;
+			}
+		}
+	}
+}

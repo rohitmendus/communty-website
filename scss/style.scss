@@ -1,0 +1,49 @@
+// Importing files
+@use "variables_mixins";
+@use "header";
+@use "about";
+@use "articles";
+@use "books";
+@use "gallery";
+@use "footer";
+@use "sign-in";
+@use "dashboard";
+@use "responsive";
+
+// Importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&family=Poppins&display=swap');
+// font-family: 'Arvo', serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+// Basic Styles
+body, p, span, pre {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arvo', serif;
+	color: white;
+}
+
+
+// Scrollbar styles START
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #2e2b2b;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+// Scrollbar styles END
