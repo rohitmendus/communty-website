@@ -10943,6 +10943,7 @@ textarea.form-control-lg {
 }
 #gallery .container .row .col-12 img:hover {
   cursor: pointer;
+  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 }
 #gallery .container .row .col-12 span {
   position: absolute;
@@ -21988,8 +21989,8 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 #dashboard .tab-content #pills-ppl ul li img {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 }
 #dashboard .tab-content #pills-ppl ul li span {
   margin-left: 10px;
