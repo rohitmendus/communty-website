@@ -1,4 +1,4 @@
-##Hi,
+Hi,
 
 This project is a website based on a jungle theme. The website is for a community called "The Jungle Squad". 
 There are three pages - Home Page, Sign In or Register Page and Dashboard.
