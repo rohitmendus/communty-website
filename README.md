@@ -1,4 +1,4 @@
-Hi,
+##Hi,
 
 This project is a website based on a jungle theme. The website is for a community called "The Jungle Squad". 
 There are three pages - Home Page, Sign In or Register Page and Dashboard.
@@ -14,5 +14,3 @@ This page is responsive and it has many Javascript functionalities. These functi
        - A search bar(Dashboard - Find People Section)
        - When you click the add article, book or images button it opens a form within the page itself(Dashboard - Add Media Section)
        - You can change your settings and the change will be reflected in the webpage unless redirected or refreshed(Dashboard - Settings Section)
-
-********************************************************************************Thank You******************************************************************************
